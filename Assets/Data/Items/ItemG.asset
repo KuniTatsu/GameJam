@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e44f80b1b83c69449b8c692d6af7b6d, type: 3}
-  m_Name: ItemC
+  m_Name: ItemG
   m_EditorClassIdentifier: 
-  _name: "\u30D9\u30C6\u30E9\u30F3\u3092\u96C7\u3046(\u30A2\u30A4\u30C6\u30E0C)"
-  _sprite: {fileID: 21300000, guid: 2d82c25bffbe54c4487afd311801509d, type: 3}
+  _name: "\u30B9\u30FC\u30D1\u30FC\u30B3\u30F3\u30D4\u30E5\u30FC\u30BF\u30FC\u3092\u5C0E\u5165\u3059\u308B"
+  _sprite: {fileID: 0}
   _price:
     _type: 1
-    _quantity: 1500
+    _quantity: 250000000000
   _productivities:
   - _type: 1
-    _quantity: 10
+    _quantity: 500000

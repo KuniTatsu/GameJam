@@ -103,7 +103,7 @@ namespace ClickerGame.Models
         {
             if (_items.TryGetValue(item, out var count))
             {
-                return item.Productivities.Select(x => new Currency(x.Type, x.Quantity * count));
+                return item.Productivities.Select(x => new Currency(x.Type, x.Quantity * count*10));
             }
             return Array.Empty<Currency>();
         }
