@@ -91,7 +91,12 @@ namespace ClickerGame.Models
             if (item == null) { throw new ArgumentNullException(nameof(item)); }
 
             var c = GetCount(item);
-            return new Currency(item.Price.Type, item.Price.Quantity);
+            var preve_count = item.Price.Quantity;
+            for (var i = 0; i < c; i++)
+            {
+                preve_count += preve_count * 0.3;
+            }
+            return new Currency(item.Price.Type, preve_count);
         }
 
         /// <summary>
