@@ -24,6 +24,15 @@ public class HomeScene : MonoBehaviour
         var e = new Button.ButtonClickedEvent();
         e.AddListener(() =>
         {
+            var q = _quantity;
+            foreach (var e in game.EnhancerInventory.Enhancers)
+            {
+                if (e.ItemMaster != null) { continue; }
+                q *= e.Factor;
+
+            }
+
+
             var c = new Currency(_currencyType, _quantity);
             var cc = game.CashInventory.Add(c);
         });
