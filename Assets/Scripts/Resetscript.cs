@@ -7,9 +7,9 @@ public class Resetscript : MonoBehaviour
     [SerializeField]
     private Button risetbutton_;
 
-    [SerializeField]
-    private Text valutext_;
+    private double score_;
 
+    private bool riset_flag_ = false;
 
     private void Start()
     {
@@ -18,15 +18,21 @@ public class Resetscript : MonoBehaviour
 
     private void Update()
     {
-        
+        if (riset_flag_)
+        {
+            score_ = 0;
+
+        }
+
+
+
     }
 
     private void FixedUpdate()
     {
-        if ()
-        {
-            Debug.Log("‚¨‚³‚ê‚½");
-        }
+     
+
+
     }
 
 
